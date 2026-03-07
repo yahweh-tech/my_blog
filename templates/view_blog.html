@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Blog</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            margin-top:20px;
+        }
+
+        .post{
+            background:rgb(23, 192, 225);
+            padding:15px;
+            margin-bottom:20px;
+            border-radius:5px;
+        }
+
+        .post h2{
+            color:#333;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:10px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Blog</h1>
+    <p>Sharing ideas and thoughts</p>
+</header>
+
+<div class="container">
+    
+    <div class="post">
+      <a style="text-decoration: none";     href="#">
+        <h2>{{Blogs.title}}</h2>
+        <p><small>{{Blogs.created_date}}</small></p>
+        <p>{{Blogs.blog_body}}</p>
+
+      </a>
+        
+    </div>
+  
+
+   
+
+</div>
+
+<footer>
+    <p>© 2026 My Blog</p>
+</footer>
+
+</body>
+</html>
